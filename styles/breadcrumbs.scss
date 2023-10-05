@@ -1,0 +1,57 @@
+.breadcrumbs {
+  margin-top: 15px;
+  overflow-x: hidden;
+
+  @media (min-width: 580px) {
+    margin-top: 20px;
+  }
+
+  &__container {
+    padding-right: 0;
+
+    @media (min-width: 820px) {
+      padding-right: 43px;
+    }
+
+    @media (min-width: 1120px) {
+      padding-right: 92px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 5px;
+    overflow-x: auto;
+  }
+
+  &__item {
+    flex-shrink: 0;
+    display: flex;
+    gap: 5px;
+    color: #969eae;
+  }
+
+  &__link {
+    padding: 5px;
+    border-radius: 4px;
+    outline-offset: -1px;
+    outline: 1px solid transparent;
+
+    &:active,
+    &:focus-visible {
+      outline-color: var(--violet, #780096);
+    }
+
+    &-actve {
+      pointer-events: none;
+
+      & ~ .breadcrumbs__separator {
+        display: none;
+      }
+    }
+  }
+
+  &__separator {
+    padding: 5px;
+  }
+}
