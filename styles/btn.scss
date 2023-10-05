@@ -1,0 +1,21 @@
+.btn {
+  color: var(--violet, #780096);
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2; /* 14.4px */
+  padding: 12px 24px;
+  border-radius: 32px;
+  border: 1px solid var(--violet, #780096);
+  outline: none;
+
+  &:hover {
+    color: #fff;
+    background: var(--violet, #780096);
+  }
+
+  &:focus-visible {
+    border: 1px solid #c0f;
+  }
+}
