@@ -37,7 +37,7 @@
 			border: none;
 
 				&::placeholder {
-					color: #969EAE;
+					color: var(--silver, #969EAE);
 					font-size: 12px;
 					line-height: 1.2;
 				}
@@ -53,10 +53,10 @@
 			top: 50%;
 			right: 24px;
 			transform: translateY(-50%);
-			color: var(--, #1C1C1C);
+			color: var(--main, #1C1C1C);
 			border-radius: 4px;
 			outline-offset: 4px;
-			outline: 1 px solid transparent;
+			outline: 1px solid transparent;
 
 			&:hover,
 			&:active,
