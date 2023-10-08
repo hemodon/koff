@@ -1,0 +1,67 @@
+.footer {
+  padding: 32px 0 40px;
+  background-color: #1c1c1c;
+  color: #fff;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+
+    @media (min-width: 580px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    width: 230px;
+    height: 61px;
+  }
+
+  &__top-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  &__devs {
+  }
+
+  &__copyright {
+  }
+}
+.contacts {
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  &__phone-number {
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__item {
+  }
+  &__link {
+  }
+}
+.devs {
+  &__item + &__item {
+    margin-top: 8px;
+  }
+  &__link {
+    display: inline-block;
+  }
+}

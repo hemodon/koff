@@ -1,15 +1,6 @@
 .card {
   position: relative;
 
-  @media (min-width: 580px) {
-    display: grid;
-    grid-template-areas:
-      'image image'
-      'title price'
-      'button button';
-    gap: 20px 11px;
-  }
-
   &__link {
     display: block;
     margin-bottom: 12px;
@@ -17,14 +8,24 @@
     overflow: hidden;
 
     @media (min-width: 580px) {
-      grid-area: image;
-      margin-bottom: 0;
+      margin-bottom: 20px;
     }
   }
 
   &__img {
     width: 100%;
     object-fit: cover;
+  }
+
+  &__info {
+    @media (min-width: 580px) {
+      display: flex;
+      gap: 11px;
+    }
+
+    @media (min-width: 820px) {
+      gap: 30px;
+    }
   }
 
   &__title {
@@ -36,7 +37,6 @@
     margin-bottom: 4px;
 
     @media (min-width: 580px) {
-      grid-area: title;
       font-size: 16px;
       margin-bottom: 0;
     }
@@ -46,8 +46,8 @@
     font-size: 16px;
 
     @media (min-width: 580px) {
-      grid-area: price;
       font-size: 20px;
+      margin-left: auto;
     }
   }
 
@@ -56,8 +56,7 @@
     margin-top: 12px;
 
     @media (min-width: 580px) {
-      grid-area: button;
-      margin-top: 0;
+      margin-top: 20px;
     }
   }
 
