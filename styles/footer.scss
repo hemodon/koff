@@ -32,12 +32,6 @@
     align-items: flex-start;
     gap: 20px;
   }
-
-  &__devs {
-  }
-
-  &__copyright {
-  }
 }
 .contacts {
   &__phone {
@@ -45,16 +39,11 @@
     align-items: center;
     gap: 3px;
   }
-  &__phone-number {
-  }
+
   &__list {
     display: flex;
     align-items: center;
     gap: 8px;
-  }
-  &__item {
-  }
-  &__link {
   }
 }
 .devs {
